@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import breakpoints from '../../constants/breakpoints';
 import colors from '../../constants/colors';
 import paragraphs from '../../constants/paragraphs';
 import radius from '../../constants/radius';
@@ -16,13 +17,28 @@ export const Container = styled.div`
   flex-direction: column;
   z-index: 2;
   margin-left: ${spaces[32]};
+
+  @media (max-width: ${breakpoints[480]}) {
+    margin-left: 0;
+    padding: ${spaces[24]};
+  }
 `;
 
 export const FormContainer = styled.form`
   display: flex;
 
-  button {
-    margin-left: ${spaces[12]};
+  @media (max-width: ${breakpoints[480]}) {
+    flex-direction: column;
+
+    button {
+      margin-top: ${spaces[12]};
+    }
+  }
+
+  @media (min-width: ${breakpoints[480]}) {
+    button {
+      margin-left: ${spaces[12]};
+    }
   }
 `;
 
@@ -49,6 +65,11 @@ export const Description = styled.div`
 
 export const RedSpanText = styled.span`
   color: ${colors.red};
+  font-weight: 600;
+`;
+
+export const GreenSpanText = styled.span`
+  color: ${colors.green[100]};
   font-weight: 600;
 `;
 
