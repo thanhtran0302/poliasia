@@ -77,8 +77,9 @@ const Home = () => {
           <RedSpanText>5 minutes</RedSpanText>
         </Subtitle>
         <Description>
-          Vous recevez les informations importantes concernant les pays de
-          l’Asie. Restez informé <RedSpanText>gratuitement</RedSpanText>.
+          Vous recevez les informations importantes concernant l’Asie
+          directement dans <RedSpanText>votre boîte mail</RedSpanText>. Restez
+          informé <RedSpanText>gratuitement</RedSpanText>.
         </Description>
         <FormContainer onSubmit={onSubmit}>
           <Input

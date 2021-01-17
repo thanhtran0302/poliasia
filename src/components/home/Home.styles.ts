@@ -89,7 +89,7 @@ export const Card = styled.div`
   border-radius: ${radius[6]};
   max-width: 400px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-left: 100px;
+  margin-left: 130px;
   background: white;
 `;
 
